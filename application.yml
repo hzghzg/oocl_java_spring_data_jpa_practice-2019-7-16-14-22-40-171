@@ -3,3 +3,13 @@
 spring:
   profiles:
     active: local
+  datasource:
+    url:  jdbc:h2:file:./h2/org
+  jpa.sho:
+    hibernate:
+      ddl-auto: update
+  h2:
+    console:
+      enabled: true
+server:
+  port: 7777
